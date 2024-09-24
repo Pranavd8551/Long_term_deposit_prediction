@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-project_name = "Long-term deposit-prediction"
+project_name = "long_term_deposit_prediction"
 
 list_of_files = [
 
