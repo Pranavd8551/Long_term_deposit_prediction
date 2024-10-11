@@ -1,0 +1,83 @@
+columns:
+  - age: int
+  - job: category
+  - marital: category
+  - education: category
+  - default: category
+  - housing: category
+  - loan: category
+  - contact: category
+  - month: category
+  - day_of_week: category
+  - duration: int
+  - campaign: int
+  - pdays: int
+  - previous: int
+  - poutcome: category
+  - emp_var_rate: int
+  - cons_price_idx: int
+  - cons_conf_idx: int
+  - euribor3m: int
+  - nr_employed: int
+  - deposit: category
+
+numerical_columns:
+  - age
+  - duration
+  - campaign
+  - pdays
+  - previous
+  - emp_var_rate
+  - cons_price_idx
+  - cons_conf_idx
+  - euribor3m
+  - nr_employed
+
+categorical_columns:
+  - job
+  - marital
+  - education
+  - default
+  - housing
+  - loan
+  - contact
+  - month
+  - day_of_week
+  - poutcome
+  - deposit
+
+
+drop_columns:
+  - default
+  - housing
+  - loan
+  - day_of_week
+  - pdays
+  - previous
+  - cons_price_idx
+  - euribor3m
+  - nr_employed
+
+
+# for data transformation
+num_features:
+  - age
+  - duration
+  - campaign
+  - emp_var_rate
+  - cons_conf_idx
+
+or_columns:
+  - has_job_experience
+  - requires_job_training
+  - full_time_position
+  - education_of_employee
+
+oh_columns:
+  - continent
+  - unit_of_wage
+  - region_of_employment
+
+transform_columns:
+  - campaign
+  - duration
